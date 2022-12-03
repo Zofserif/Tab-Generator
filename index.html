@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>|-----|</title>
+    <meta name="description" content="This is a tab generator for the tab tree style user. For more ways of categorizing tabs. Enjoy!">
+    <link rel="icon" type="image/png" sizes="1024x1024" href="/assets/img/cyberpunk.png">
+    <link rel="icon" type="image/png" sizes="1024x1024" href="/assets/img/cyberpunk.png">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic&amp;display=swap">
+    <link rel="stylesheet" href="/assets/css/untitled.css">
+</head>
+
+<body id="page-top">
+    <nav class="navbar navbar-light navbar-expand" id="sidebar-wrapper">
+        <div class="container"><button data-bs-toggle="collapse" type="submit" id="myBtn" onclick="TextTab()" class="navbar-toggler d-none" data-bs-target="#"></button>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav sidebar-nav" id="sidebar-nav">
+                    <li class="nav-item sidebar-brand"><a class="nav-link active js-scroll-trigger" href="#page-top">|-----|</a></li>
+                    <li class="nav-item sidebar-nav-item"><a class="nav-link js-scroll-trigger" href="#page-top">Home</a></li>
+                    <li class="nav-item sidebar-nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item sidebar-nav-item"><a class="nav-link js-scroll-trigger" href="#services">Services</a></li>
+                    <li class="nav-item sidebar-nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item sidebar-nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="d-flex masthead" style="border-color: var(--bs-btn-disabled-color);border-radius: 0;background: url(&quot;/assets/img/bg-masthead.jpg&quot;) no-repeat;background-size: cover;">
+        <div class="container my-auto text-center"><input id="myInput" type="text" style="font-size: 88px;text-align: center;background: rgba(255,255,255,0);border-color: rgba(0,0,0,0);border-radius: 106px;" placeholder="TYPE HERE"></div>
+    </header>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/stylish-portfolio.js"></script>
+
+    <script type="text/javascript">
+        function TextTab() {
+          var inputVal = document.getElementById("myInput").value;
+          document.title = inputVal;
+        }
+  
+        var input = document.getElementById("myInput");
+        input.addEventListener("keypress", function (event) {
+          if (event.key === "Enter") {
+            event.preventDefault();
+            document.getElementById("myBtn").click();
+          }
+        });
+      </script>
+
+</body>
+
+</html>
